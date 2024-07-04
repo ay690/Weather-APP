@@ -1,5 +1,12 @@
 # Weather APP
 
+# Demo Link
+ 
+https://weather-react-app-tailwind.netlify.app/
+
+
+# Description
+
 This application provides global temperature data, along with information on wind direction, humidity, air quality, UV index, visibility, sunrise, and sunset times. All this data is obtained using the Weatherbit API. You can toggle between Celsius and Fahrenheit to view temperature in your preferred unit. Look up weather information for any city by simply entering the name. This is fully resposive for all the devices.
 
 # Snippets
