@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
-import { Search, Primarydata } from "./index";
+import { Search, Primarydata, Secondarydata } from "./index";
 
 const Main = () => {
   const api_key = import.meta.env.VITE_WEATHER_API_KEY;
@@ -53,7 +53,8 @@ const Main = () => {
         {/* making of left column  */}
         <div className="w-[30%] lg:w-[30%] xs:w-full sm:w-full h-full bg-[#FFFFFF] pl-10 py-4 flex flex-col justify-between items-start gap-4">
           <Search getSearchData={getDataFromSearchBar} />
-          <Primarydata mainData={wdata} clickName={clickName}/>
+          <Primarydata mainData={wdata} clickName={clickName} />
+          <Secondarydata mainData={wdata} />
         </div>
       </div>
     </div>
