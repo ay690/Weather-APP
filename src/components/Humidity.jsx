@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import thumbup from "../assets/thumbup.png";
 import thumbyo from "../assets/thumbyo.png";
 import thumbdown from "../assets/thumbdown.png";
