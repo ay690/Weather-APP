@@ -60,7 +60,7 @@ const Secondarydata = ({ mainData }) => {
     };
 
     setWeatherIcon(iconMappings[WeatherData.description]);
-    console.log(setWeatherIcon(iconMappings[WeatherData.description]));
+    // console.log(setWeatherIcon(iconMappings[WeatherData.description]));
   
   }, [mainData]);
 

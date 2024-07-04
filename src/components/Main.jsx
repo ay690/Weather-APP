@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import { Search, Primarydata, Secondarydata } from "./index";
 
 const Main = () => {
-  const api_key = import.meta.env.VITE_WEATHER_API_KEY;
+  //   const api_key = import.meta.env.VITE_WEATHER_API_KEY;
+  const api_key = "";
   const [wdata, setWdata] = useState({
     weather: {
       description: "",
@@ -55,6 +56,35 @@ const Main = () => {
           <Search getSearchData={getDataFromSearchBar} />
           <Primarydata mainData={wdata} clickName={clickName} />
           <Secondarydata mainData={wdata} />
+        </div>
+        {/* making of right column  */}
+        <div className="w-[70%] lg:w-[70%] xs:w-full sm:w-full h-full bg-transparent flex flex-col justify-between items-stretch gap-5 p-4 lg:p-4 sm:p-2">
+          {/* making of right coloumn header  */}
+          <div className="w-full h-[60px] flex justify-between items-center px-4 pt-2 xs:mb-4 sm:mb-4">
+            <h2 className="font-Popin text-2xl xs:text-xl sm:text-2xl font-[500]">
+              Today&apos;s Highlights
+            </h2>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={celClick}
+                className={`w-[40px] h-[40px] flex justify-center items-center font-Popin text-[18px] font-[500] shadow-[0_0_8px_#64646f10] ${
+                  celbtnactive ? "bg-black text-white" : "bg-white text-black"
+                } rounded-[50%]`}
+              >
+                °C
+              </button>
+              <button
+                onClick={fahClick}
+                className={`w-[40px] h-[40px] flex justify-center items-center font-Popin text-[18px] font-[500] shadow-[0_0_8px_#64646f10] ${
+                  fahbtnactive ? "bg-black text-white" : "bg-white text-black"
+                } rounded-[50%]`}
+              >
+                °F
+              </button>
+            </div>
+          </div>
+
+          {/* Card display  */}
         </div>
       </div>
     </div>
