@@ -9,11 +9,12 @@ import {
   WindStatus,
   SunTime,
   Humidity,
+  AirQuality,
 } from "./index";
 
 const Main = () => {
-    const api_key = import.meta.env.VITE_WEATHER_API_KEY;
-//   const api_key = "";
+  const api_key = import.meta.env.VITE_WEATHER_API_KEY;
+  //   const api_key = "";
   const [wdata, setWdata] = useState({
     weather: {
       description: "",
@@ -97,6 +98,7 @@ const Main = () => {
             <WindStatus mainData={wdata} />
             <SunTime mainData={wdata} />
             <Humidity mainData={wdata} />
+            <AirQuality mainData={wdata} />
           </div>
         </div>
       </div>
