@@ -1,9 +1,10 @@
 /* eslint-disable no-unused-vars */
+import { Main } from "./components/index";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+     <Main />
     </>
   );
 }
