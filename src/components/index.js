@@ -4,5 +4,6 @@ import Primarydata from "./Primarydata";
 import Secondarydata from "./Secondarydata";
 import UVindex from "./UVindex";
 import WindStatus from "./WindStatus";
+import SunTime from "./SunTime";
 
-export { Main, Search, Primarydata, Secondarydata, UVindex, WindStatus };
+export { Main, Search, Primarydata, Secondarydata, UVindex, WindStatus, SunTime };

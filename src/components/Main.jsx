@@ -7,6 +7,7 @@ import {
   Secondarydata,
   UVindex,
   WindStatus,
+  SunTime,
 } from "./index";
 
 const Main = () => {
@@ -93,6 +94,8 @@ const Main = () => {
           <div className="grid flex-1 w-full grid-cols-3 p-2 lg:grid-cols-3 xs:grid-cols-1 sm:grid-cols-2 xs:gap-6 sm:gap-8 place-items-center md:place-content-stretch">
             <UVindex mainData={wdata} />
             <WindStatus mainData={wdata} />
+            <SunTime mainData={wdata} />
+            
           </div>
         </div>
       </div>
