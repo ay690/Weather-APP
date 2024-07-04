@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
-import { Search, Primarydata, Secondarydata } from "./index";
+import { Search, Primarydata, Secondarydata, UVindex } from "./index";
 
 const Main = () => {
   //   const api_key = import.meta.env.VITE_WEATHER_API_KEY;
@@ -83,8 +83,10 @@ const Main = () => {
               </button>
             </div>
           </div>
-
-          {/* Card display  */}
+           {/* Card display  */}
+          <div className="grid flex-1 w-full grid-cols-3 p-2 lg:grid-cols-3 xs:grid-cols-1 sm:grid-cols-2 xs:gap-6 sm:gap-8 place-items-center md:place-content-stretch">
+            <UVindex mainData={wdata}/>
+          </div>
         </div>
       </div>
     </div>
