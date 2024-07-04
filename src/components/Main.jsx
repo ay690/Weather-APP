@@ -9,6 +9,7 @@ import {
   WindStatus,
   SunTime,
   Humidity,
+  Visibility,
   AirQuality,
 } from "./index";
 
@@ -99,6 +100,7 @@ const Main = () => {
             <SunTime mainData={wdata} />
             <Humidity mainData={wdata} />
             <AirQuality mainData={wdata} />
+            <Visibility mainData={wdata} />
           </div>
         </div>
       </div>

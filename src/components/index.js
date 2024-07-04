@@ -7,5 +7,6 @@ import WindStatus from "./WindStatus";
 import SunTime from "./SunTime";
 import Humidity from "./Humidity";
 import AirQuality from "./AirQuality";
+import Visibility from "./Visibility";
 
-export { Main, Search, Primarydata, Secondarydata, UVindex, WindStatus, AirQuality, SunTime, Humidity};
+export { Main, Search, Primarydata, Secondarydata, UVindex, WindStatus, AirQuality, SunTime, Humidity, Visibility};
